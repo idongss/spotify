@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="anak band.css">
+    </head>
+    <body>
+       <header>
+<div class="menu_side">
+    <nav>
+        <ul>
+            <li><a href="spotify .html">Discover</a></li>
+            <li><a href="Playlist.html">My Playlist<span></span></a></li>
+            <li><a href="Our Journey.html">Radio</a></li>
+        </ul>
+        <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music...">
+        </div>
+        <div class="user">
+            <img src="profile.jpg" alt="user" title="stand Here Alone">
+        </div>
+    </nav>
+    <div class="content">
+        <img src="band.png" alt="SHA" class="img1">
+        <h1>anak band cuenahh.. </h1>
+        <p>
+        Playlist by Warga Sipil
+        <div class="buttons"> 
+            <button><i class="bi playListPlay bi-play-circle-fill" id="1">&nbsp;PLAY</i></button>
+            <button><a href="Playlist.html">BACK</a></button>
+        </div>
+    <div class="menu_song">
+        <li class="song_item">
+            
+            <img src="song.jpg" alt="SHA">
+            <h5>
+                Wanita Masih Banyak
+                <div class="subtitle"> Stand Here Alone</div>
+                </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </a> 
+        </li>
+        <li class="song_item">
+           
+          
+            <img src="Sid.jpg" alt="SID">
+            <h5>
+               Bulan & Ksatria
+                <div class="subtitle">Superman is Dead</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+        </a>   
+        </li>
+        <li class="song_item">
+           
+            <img src="Introvert.jpeg" alt="SHA">
+            <h5>
+               Introvert
+                <div class="subtitle">Stand Here Alone</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+        </li>
+        <li class="song_item">
+         
+            <img src="Arjuna.jpeg" alt="SHA">
+            <h5>
+                Arjuna
+                <div class="subtitle">Dewa 19</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+            
+        </li>
+        <li class="song_item">
+          
+            <img src="depresi.jpeg" alt="SHA">
+            <h5>
+                Diary Depresiku
+                <div class="subtitle">Last Child</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+        
+        </li>
+
+        <li class="song_item">
+          
+            <img src="judika.jpeg" alt="SHA">
+            <h5>
+                Aku Yang Tersakit
+                <div class="subtitle">Judika</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+        
+        </li>
+
+        <li class="song_item">
+          
+            <img src="" alt="SHA">
+            <h5>
+                Wanita Masih Banyak
+                <div class="subtitle">Stand Here Alone</div>
+            </h5>
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+        
+        </li>
+    </div>
+</div>
+<div class="master_play">
+    <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+    </div>
+    <img src="img/img 1.jpg" alt="SHA" id="poster_master_play">
+    <h5 id="title">
+        Wanita Masih Banyak<br>
+        <div class="subtitle">Stand Here Alone</div>
+        
+    </h5>
+    <div class="icon">
+        <i class="bi bi-skip-start" id="back"></i>
+        <i class="bi bi-play-fill" id="masterPlay"></i>
+        <i class="bi bi-skip-end" id="next"></i>
+    </div>
+    <span id="currentStart">0:00</span>
+    <div class="bar">
+        <input type="range" id="seek" min="0" value="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+
+         
+    </div>
+    <span id="currentEnd">0:00</span>
+
+    <div class="vol">
+        <i class="bi bi-volume-down" id="vol_icon"></i>
+        <input type="range" id="vol" min="0" value="30" max="100">
+        <div class="vol_bar"></div>
+        <div class="dot" id="vol_dot">
+
+        </div>
+
+    </div>
+</div>
+
+</header>
+<script src="band.js"></script>
+</body>
+</html>

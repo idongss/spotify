@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'poppins',arial;
+    
+}
+
+.song_side nav{
+    position: fixed;
+    width: 99%;
+    height: 10%;
+    margin: auto;
+    /*border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #1e3526;
+
+    
+}
+
+
+ .song_side nav ul{
+    display: flex;
+}
+
+ .song_side nav ul li {
+    position: relative;
+    list-style-type: none;
+    font-size: 13px;
+    color: #4c5262;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3s linear;
+    text-decoration: none;
+}
+.song_side a{
+    text-decoration: none;
+    color: #4c5262;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.song_side a:hover{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+ .song_side nav ul li:hover{
+    color: #fff;
+}
+
+ .song_side nav ul li:nth-child(3){
+    color: #fff;
+}
+
+ .song_side nav ul li span{
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background:  #5fa77a;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+}
+
+ .song_side nav .search{
+    position: relative;
+    width: 40%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    color: gray;
+    z-index: -1;
+}    
+
+ .song_side nav .search::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(184, 184, 184,.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}  
+
+ .song_side nav .search .bi{
+  
+    font-size: 13px;
+    padding: 3px 0px 0px 10px;
+    z-index: 1;
+}
+
+ .song_side nav .search input{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0px 9px;
+    color: #fff;
+    font-size: 12px;
+}  
+
+ .song_side nav .user{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}  
+
+ .song_side nav .user img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #131312;
+    margin-right: 10px;
+   
+}  
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 20px 0 16px 0;
+  color: #fff;
+}
+
+#landing a {
+  text-decoration: none;
+  color: #979797;
+  font-size: 24px;
+  
+}
+
+p {
+  color: #979797;
+  margin: 0 0 16px 0;
+  font-size: 24px;
+}
+
+section {
+  padding: 50px;
+  background-color: #1e3526;
+
+}
+
+.btn {
+  background-color: #292929;
+  color: rgb(131, 102, 102);
+  padding: 8px 24px;
+}
+
+.btn-alt {
+  background-color: white;
+  color: #263d2e;
+  margin-right: 16px;
+  border: 2px solid #5fa77a;
+}
+.btn-alf {
+    position: absolute;
+    background-color: white;
+    color: #263d2e;
+    margin:20px 0px 0px 0px;
+    border: 2px solid #5fa77a;
+    padding: 8px 24px;
+    font-size: 20px;
+  }
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 128px;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+
+
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+#landing p {
+  margin-bottom: 32px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+#about > div {
+  width: 50%;
+}
+
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 72px;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-stats-item div {
+    width: 50px;
+    height: 10px;
+    background-color: #222222;
+    margin-bottom: 16px;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 120px;
+    margin-top: 72px;
+}
+
+.service-detail-item {
+  
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .1);
+}
+.service-detail-item-1 {
+  
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .1);
+}
+
+.service-detail-item img {
+    width: 100%;
+}
+.service-detail-item-1 img {
+    width: 65%;
+}
+
+.service-detail-item h2 {
+    padding: 0 16px;
+}
+
+.service-detail-item .service-detail-item-1 p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ffc108;
+    padding: 64px 32px;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+form button {
+    border: none;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas:    "name subject"
+                            "email phone"
+                            "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+#input-subject {
+    grid-area: subject;
+}
+#input-email {
+    grid-area: email;
+}
+#input-phone {
+    grid-area: phone;
+}
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+footer {
+  
+    padding: 16px 128px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: rgb(153, 153, 153);
+    width: 50%;
+}
+footer h1 {
+    color: white;
+   
+  
+}
+
+#contact{
+ text-align: center;
+ 
+ 
+}
+p1{
+   
+    color: white;
+    font-size: 25px;
+ margin-right: 130px;
+ 
+ 
+}
+
+text{
+    position: absolute;
+    margin-left: 5px;
+}
